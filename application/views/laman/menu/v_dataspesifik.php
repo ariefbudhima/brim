@@ -55,7 +55,8 @@
                         ?>
                       </table>
                       <br>
-                      <b>Data Laboratorium</b>
+                      <b>Data Laboratorium</b> <br>
+                      <b>Hematologi</b>
                       <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
                         <thead>
                         <tr>
