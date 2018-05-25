@@ -23,6 +23,13 @@ class M_datapasien extends CI_Model{
         return $kue;
       }
 
+      function getpemeriksaanhema($id){
+            $this->db->select('*');
+            $this->db->from('labhema');
+            $this->db->where('idPasien', $id);
+            $kue = $this->db->get();
+            return $kue;
+          }
 
 
 }

@@ -29,7 +29,7 @@ class lihatdata extends APT_Controller{
   public function getfullinfopas(){
     // if ($this->session->userdata("masuk")) {
       $id= $this->uri->segment(3);
-      $query = $this->M_datapasien->getpemeriksaan1($id);
+      $query = $this->M_datapasien->getpemeriksaanhema($id);
       $query2 = $this->M_datapasien->getpemeriksaan2($id);
       // if ($query->num_rows()>0){
         $data['pasien'] = $query->result();

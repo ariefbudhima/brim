@@ -5,7 +5,6 @@ class Utama extends APT_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('Register');
         $this->load->model('User');
     }
 
