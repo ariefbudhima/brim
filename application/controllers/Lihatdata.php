@@ -2,7 +2,6 @@
 class lihatdata extends APT_Controller{
   public function __construct(){
       parent::__construct();
-      $this->load->model('Beli');
       $this->load->model('M_datapasien');
   }
 
