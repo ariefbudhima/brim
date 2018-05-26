@@ -37,8 +37,8 @@
 
         </div>
         <div class="col-lg-6">
-          <?php echo "URINALIS" ?> <br>
-          </div>
+          <h4>URINALIS</h4>
+        </div>
           <!-- action ke controller yang seharusnya untuk menginputkan data dan akan memanggil model yang bersangkutan -->
         <form action="/action_page.php" method="get" class="col-lg-12">
             <div class="col-lg-4">
@@ -51,48 +51,95 @@
                 echo "</select>";
                ?>
                <br>
-          <input type="radio" name="gender" value="laki"> laki <br>
+          <!-- <input type="radio" name="gender" value="laki"> laki <br>
           <input type="radio" name="gender" value="cewe"> cewe <br>
 
 
           <input type="radio" name="warna" value="jernih"> jernih <br>
-          <input type="radio" name="warna" value="kuning"> kuning <br>
-            <!-- <?php echo "Hemoglobin" ?> <br>
-            <input type="text" name="hemoglobin"> <br>
+          <input type="radio" name="warna" value="kuning"> kuning <br> -->
+
+            <?php echo "Warna Urin" ?> <br>
+            <select class="" name="">
+              <option value="putih">Putih</option>
+              <option value="bening">Bening</option>
+              <option value="kuning">Kuning Pucat</option>
+              <option value="hijau">Hijau</option>
+              <option value="coklat">Coklat</option>
+              <option value="biru">Biru</option>
+              <option value="hitam">Hitam</option>
+              <option value="berbusa">Berbusa</option>
+              <option value="kemerahan">Kemerahan</option>
+            </select>
+          <br>
+            <?php echo "Kejernihan" ?> <br>
+            <select class="" name="">
+              <option value="jernih">Jernih</option>
+              <option value="keruh">Keruh</option>
+            </select>
+            <br>
+            <?php echo "BJ" ?> <br>
+            <input type="text" name="BJ"> <br>
+            <?php echo "pH" ?> <br>
+            <input type="text" name="pH"> <br>
+            <?php echo "Protein" ?> <br>
+            <div class="col-lg-3">
+                <input type="radio" name="protein" value="positif"> Positif <br>
+                <input type="radio" name="protein" value="negatif"> Negatif <br>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <?php echo "Glukosa" ?><br>
+            <div class="col-lg-3">
+                <input type="radio" name="glukosa" value="positif"> Positif <br>
+                <input type="radio" name="glukosa" value="negatif"> Negatif <br>
+            </div>
+            <?php echo "Keton" ?> <br>
+            <div class="col-lg-3">
+                <input type="radio" name="keton" value="positif"> Positif <br>
+                <input type="radio" name="keton" value="negatif"> Negatif <br>
+            </div>
+            <?php echo "Bilirubin" ?> <br>
+            <div class="col-lg-3">
+                <input type="radio" name="bikirubin" value="positif"> Positif <br>
+                <input type="radio" name="bilirubin" value="negatif"> Negatif <br>
+            </div>
+            <?php echo "Urobilinogen" ?> <br>
+            <div class="col-lg-3">
+                <input type="radio" name="urobilinogen" value="rendah"> Positif <br>
+                <input type="radio" name="urobilinogen" value="normal"> Negatif <br>
+                <input type="radio" name="urobilinogen" value="meningkat"> Meningkat <br>
+            </div>
+            <?php echo "Nitrit" ?> <br>
+            <div class="col-lg-3">
+                <input type="radio" name="nitrit" value="positif"> Positif <br>
+                <input type="radio" name="nitrit" value="negatif"> Negatif <br>
+            </div>
+            <?php echo "Darah" ?> <br>
+            <div class="col-lg-3">
+                <input type="radio" name="darah" value="positif"> Positif <br>
+                <input type="radio" name="darah" value="negatif"> Negatif <br>
+            </div>
+            <?php echo "Lekosit" ?> <br>
+            <div class="col-lg-3">
+                <input type="radio" name="lekosit" value="positif"> Positif <br>
+                <input type="radio" name="lekosit" value="negatif"> Negatif <br>
+            </div>
+          </div>
+          <br>
+          <div class="col-lg-4">
+            <?php echo "<strong>Sedimen</strong>" ?> <br>
             <?php echo "Eritrosit" ?> <br>
             <input type="text" name="Eritrosit"> <br>
-            <?php echo "Hematokrit" ?> <br>
-            <input type="text" name="Hematokrit"> <br>
             <?php echo "Lekosit" ?> <br>
             <input type="text" name="Lekosit"> <br>
-            <?php echo "Laju Endap Darah" ?> <br>
-            <input type="text" name="LajuEndap"> <br> -->
+            <?php echo "Epitel" ?> <br>
+            <input type="text" name="Epitel"> <br>
+            <?php echo "Kristal" ?> <br>
+            <div class="col-lg-3">
+                <input type="radio" name="kristal" value="positif"> Positif <br>
+                <input type="radio" name="kristal" value="negatif"> Negatif <br>
+            </div>
           </div>
-
-          <div class="col-lg-4">
-            <!-- <?php echo "Thrombosit" ?><br>
-            <input type="text" name="Thrombosit"><br>
-            <?php echo "MCV" ?> <br>
-            <input type="text" name="MCV"> <br>
-            <?php echo "MCH" ?> <br>
-            <input type="text" name="MCH"> <br>
-            <?php echo "MCHC" ?> <br>
-            <input type="text" name="MCHC"> <br>
-            <?php echo "Basofil" ?> <br>
-            <input type="text" name="Basofil"> <br> -->
-          </div>
-
-          <div class="col-md-4">
-            <!-- <?php echo "Eosinofil" ?> <br>
-            <input type="text" name="Eosinofil"> <br>
-            <?php echo "Batang" ?> <br>
-            <input type="text" name="Batang"> <br>
-            <?php echo "Segmen" ?> <br>
-            <input type="text" name="Segmen"> <br>
-            <?php echo "Limposit" ?> <br>
-            <input type="text" name="Limposit"> <br>
-            <?php echo "Monosit" ?> <br>
-            <input type="text" name="Monosit"> <br> -->
           </div>
           <div class="col-lg-12">
             <div class="col-lg-4">
