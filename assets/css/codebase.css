@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+.tabelku{
+  position: relative;
+  left: 10px;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -12912,6 +12917,16 @@ button.bg-gray-lighter:focus {
 
 .m-50 {
   margin: 50px 50px !important;
+}
+
+.mt-1,
+.my-1{
+  margin-top: 1px !important;
+}
+
+.mb-1,
+.my-1{
+  margin-bottom: 1px !important;
 }
 
 .mt-50,

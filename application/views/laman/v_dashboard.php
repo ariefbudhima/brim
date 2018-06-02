@@ -22,7 +22,7 @@
 
                 <!-- Page Content -->
                 <div class="content">
-                    <div class="my-50 ">
+                    <div class="my-1 ">
                         <h2 class="font-w700 text-black mb-10">Laboratorium</h2>
                         <h3 class="h5 text-muted mb-0">
                            Selamat Datang, <?php echo $this->session->userdata('nama');?> | <?php echo $this->session->userdata('username');?> | <?php echo ucfirst($this->session->userdata('level'));?>

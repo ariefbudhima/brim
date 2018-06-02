@@ -22,7 +22,7 @@
                     <a href="<?php echo base_url(); ?>inputLaborat/inputlaboraturin">Urinalis</a>
                 </li>
                 <li>
-                    <a href="op_error_400.html">Parasitologi</a>
+                    <a href="<?php echo base_url(); ?>inputLaborat/inputlaboratpara">Parasitologi</a>
                 </li>
                 <li>
                     <a href="op_error_400.html">Serologi</a>

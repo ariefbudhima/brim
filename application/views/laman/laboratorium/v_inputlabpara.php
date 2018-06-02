@@ -27,37 +27,21 @@
                         <h3 class="h5 text-muted mb-0">
                            Selamat Datang, <?php echo $this->session->userdata('nama');?> | <?php echo $this->session->userdata('username');?> | <?php echo ucfirst($this->session->userdata('level'));?>
                         </h3>
-
                     </div>
 
                     <div class="block block-fx-shadow px-4 py-4">
-                      <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
-                              <thead>
-                              <tr>
-                                  <th>Id Pasien</th>
-                                  <th>Nama Pasien</th>
-                                  <th>Umur</th>
-                                  <th>Jenis Kelamin</th>
-                                  <th>Alamat</th>
-                                  <th>Detail</th>
-                              </tr>
-                              </thead>
-                              <tbody>
-                                    <?php
-                              foreach ($pasien as $obj) {
-                                  echo "<tr>";
-                                  echo "<td>$obj->idPasien</td>";
-                                  echo "<td>$obj->nmPasien</td>";
-                                  echo "<td>$obj->umur</td>";
-                                  echo "<td>$obj->gender</td>";
-                                  echo "<td>$obj->Alamat</td>";
-                                  echo "<td><a href='getfullinfopas/$obj->idPasien'>Lihat</a></td>";
-                              }
-                              ?>
-                              </tbody>
-                          </table>
-                    </div>
-                </div>
+                      <!-- <div class="container-fluid"> -->
+                      <div class="row">
+                        <div class="col-lg-4">
+                          halo
+                        </div>
+                        <div class="col-lg-4">
+                          halo2
+                        </div>
+                      </div>
+    <!-- </div> -->
+  </div>
+</div>
                 <!-- END Page Content -->
 <!--             </main>-->
             <!-- END Main Container -->
@@ -76,10 +60,3 @@
             <!-- END Footer -->
         </div>
         <!-- END Page Container -->
-<script>
-//    $(document).ready(function() {
-//        $("#success-alert").fadeTo(2000, 500).slideUp(500, function(){
-//            $("#success-alert").slideUp(500);
-//        });
-//    });
-</script>

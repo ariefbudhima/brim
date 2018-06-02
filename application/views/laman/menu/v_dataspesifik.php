@@ -22,7 +22,7 @@
 
                 <!-- Page Content -->
                 <div class="content">
-                    <div class="my-50 ">
+                    <div class="my-1 ">
                         <h2 class="font-w700 text-black mb-10">Laboratorium</h2>
                         <h3 class="h5 text-muted mb-0">
                            Selamat Datang, <?php echo $this->session->userdata('nama');?> | <?php echo $this->session->userdata('username');?> | <?php echo ucfirst($this->session->userdata('level'));?>
@@ -67,15 +67,7 @@
                             <th>lekosit</th>
                             <th>Laju Endap Darah</th>
                             <th>Thrombosit</th>
-                            <th>MCV</th>
-                            <th>MCH</th>
-                            <th>MCHC</th>
-                            <th>Basofil</th>
-                            <th>Eosinofil</th>
-                            <th>Batang</th>
-                            <th>Segmen</th>
-                            <th>Limposit</th>
-                            <th>Monosit</th>
+
                         </tr>
                         </thead>
 
@@ -89,18 +81,39 @@
                           echo "<td>$obj->lekosit</td>";
                           echo "<td>$obj->lajuendapdarah</td>";
                           echo "<td>$obj->thrombosit</td>";
-                          echo "<td>$obj->MCV</td>";
-                          echo "<td>$obj->MCH</td>";
-                          echo "<td>$obj->MCHC</td>";
-                          echo "<td>$obj->basofil</td>";
-                          echo "<td>$obj->eosinofil</td>";
-                          echo "<td>$obj->batang</td>";
-                          echo "<td>$obj->segmen</td>";
-                          echo "<td>$obj->limposit</td>";
-                          echo "<td>$obj->monosit</td>";
                           }
                           ?>
                         </tbody>
+                          </table>
+                          <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                            <thead>
+                              <tr>
+                                <th>MCV</th>
+                                <th>MCH</th>
+                                <th>MCHC</th>
+                                <th>Basofil</th>
+                                <th>Eosinofil</th>
+                                <th>Batang</th>
+                                <th>Segmen</th>
+                                <th>Limposit</th>
+                                <th>Monosit</th>
+                              </tr>
+                            </thead>
+                            <?php foreach ($pasien  as $obj){
+                              echo "<tr>";
+                              echo "<td>$obj->MCV</td>";
+                              echo "<td>$obj->MCH</td>";
+                              echo "<td>$obj->MCHC</td>";
+                              echo "<td>$obj->basofil</td>";
+                              echo "<td>$obj->eosinofil</td>";
+                              echo "<td>$obj->batang</td>";
+                              echo "<td>$obj->segmen</td>";
+                              echo "<td>$obj->limposit</td>";
+                              echo "<td>$obj->monosit</td>";
+                            }
+                            ?>
+
+
                           </table>
                     </div>
                 </div>

@@ -22,7 +22,7 @@
 
                 <!-- Page Content -->
                 <div class="content">
-                    <div class="my-50 ">
+                    <div class="my-1 ">
                         <h2 class="font-w700 text-black mb-10">Laboratorium</h2>
                         <h3 class="h5 text-muted mb-0">
                            Selamat Datang, <?php echo $this->session->userdata('nama');?> | <?php echo $this->session->userdata('username');?> | <?php echo ucfirst($this->session->userdata('level'));?>
@@ -31,74 +31,80 @@
                     </div>
 
                     <div class="block block-fx-shadow px-4 py-4">
-                      <div class="container-fluid">
-      <div class="body col-lg-12">
-        <div class="col-lg-6">
-
+                      <!-- <div class="container-fluid"> -->
+      <div class="body col-sm-6">
+        <div class="col-sm-3">
+          halo
         </div>
-        <div class="col-lg-6">
+        <div class="col-sm-3">
           <h4>HEMATOLOGI</h4>
           </div>
+        </div>
           <!-- action ke controller yang seharusnya untuk menginputkan data dan akan memanggil model yang bersangkutan -->
-        <form action="/action_page.php" method="get" class="col-lg-12">
+        <form action="/action_page.php" method="get"class="col-lg-12" >
+          <div class="row">
             <div class="col-lg-4">
               <?php echo "Pilih Pasien" ?> <br>
-              <?php
-                echo "<select name = 'pasien'>";
-                foreach ($pasien as $key) {
-                  echo "<option value = '".$key->idPasien."'>".$key->idPasien."</option>>";
-                }
-                echo "</select>";
-               ?>
+              <div class="tabelku">
+                <?php
+                  echo "<select name = 'pasien'>";
+                  foreach ($pasien as $key) {
+                    echo "<option value = '".$key->idPasien."'>".$key->idPasien."</option>>";
+                  }
+                  echo "</select>";
+                 ?>
+              </div>
                <br>
             <?php echo "Hemoglobin" ?> <br>
-            <input type="text" name="hemoglobin"> <br>
+            <input type="text" name="hemoglobin" class="tabelku"> <br>
             <?php echo "Eritrosit" ?> <br>
-            <input type="text" name="Eritrosit"> <br>
+            <input type="text" name="Eritrosit" class="tabelku"> <br>
             <?php echo "Hematokrit" ?> <br>
-            <input type="text" name="Hematokrit"> <br>
+            <input type="text" name="Hematokrit" class="tabelku"> <br>
             <?php echo "Lekosit" ?> <br>
-            <input type="text" name="Lekosit"> <br>
+            <input type="text" name="Lekosit" class="tabelku"> <br>
             <?php echo "Laju Endap Darah" ?> <br>
-            <input type="text" name="LajuEndap"> <br>
-          </div>
-
-          <div class="col-lg-4">
-            <?php echo "Thrombosit" ?><br>
-            <input type="text" name="Thrombosit"><br>
-            <?php echo "MCV" ?> <br>
-            <input type="text" name="MCV"> <br>
-            <?php echo "MCH" ?> <br>
-            <input type="text" name="MCH"> <br>
-            <?php echo "MCHC" ?> <br>
-            <input type="text" name="MCHC"> <br>
-            <?php echo "Basofil" ?> <br>
-            <input type="text" name="Basofil"> <br>
-          </div>
-
-          <div class="col-md-4">
-            <?php echo "Eosinofil" ?> <br>
-            <input type="text" name="Eosinofil"> <br>
-            <?php echo "Batang" ?> <br>
-            <input type="text" name="Batang"> <br>
-            <?php echo "Segmen" ?> <br>
-            <input type="text" name="Segmen"> <br>
-            <?php echo "Limposit" ?> <br>
-            <input type="text" name="Limposit"> <br>
-            <?php echo "Monosit" ?> <br>
-            <input type="text" name="Monosit"> <br>
-          </div>
-          <div class="col-lg-12">
-            <div class="col-lg-4">
+            <input type="text" name="LajuEndap"  class="tabelku"> <br>
             </div>
+
+            <div class="col-lg-4">
+            <?php echo "Thrombosit" ?><br>
+            <input type="text" name="Thrombosit" class="tabelku"><br>
+            <?php echo "MCV" ?> <br>
+            <input type="text" name="MCV" class="tabelku"> <br>
+            <?php echo "MCH" ?> <br>
+            <input type="text" name="MCH" class="tabelku"> <br>
+            <?php echo "MCHC" ?> <br>
+            <input type="text" name="MCHC" class="tabelku"> <br>
+            <?php echo "Basofil" ?> <br>
+            <input type="text" name="Basofil" class="tabelku"> <br>
+            </div>
+
+            <div class="col-md-4">
+            <?php echo "Eosinofil" ?> <br>
+            <input type="text" name="Eosinofil" class="tabelku"> <br>
+            <?php echo "Batang" ?> <br>
+            <input type="text" name="Batang" class="tabelku"> <br>
+            <?php echo "Segmen" ?> <br>
+            <input type="text" name="Segmen" class="tabelku"> <br>
+            <?php echo "Limposit" ?> <br>
+            <input type="text" name="Limposit" class="tabelku"> <br>
+            <?php echo "Monosit" ?> <br>
+            <input type="text" name="Monosit" class="tabelku"> <br>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-12"> -->
+            <!-- <div class="col-lg-4">
+            </div> -->
             <div class="col-lg-6">
               <br>
-              <input type="submit" value="Submit"> <br>
+              <input type="submit" value="Submit" style="text-align : center; position : absolute;"> <br>
             </div>
-          </div>
+          <!-- </div> -->
         </form>
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div> -->
   </div>
 </div>
                 <!-- END Page Content -->

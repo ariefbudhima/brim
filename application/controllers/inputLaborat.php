@@ -24,5 +24,11 @@ public function inputlaboraturin(){
   $data['pasien'] = $query->result();
   $this->laman('laman/laboratorium/v_inputlaburin', $data);
 }
+
+public function inputlaboratpara(){
+  $query = $this->M_inputlab->getdatapas();
+  $data['pasien'] = $query->result();
+  $this->laman('laman/laboratorium/v_inputlabpara', $data);
+}
 }
  ?>
