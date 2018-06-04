@@ -34,7 +34,6 @@
                       <!-- <div class="container-fluid"> -->
       <div class="body col-sm-6">
         <div class="col-sm-3">
-          halo
         </div>
         <div class="col-sm-3">
           <h4>HEMATOLOGI</h4>
@@ -54,7 +53,7 @@
                   echo "</select>";
                  ?>
               </div>
-               <br>
+               <!-- <br> -->
             <?php echo "Hemoglobin" ?> <br>
             <input type="text" name="hemoglobin" class="tabelku"> <br>
             <?php echo "Eritrosit" ?> <br>

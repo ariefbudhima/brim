@@ -9,7 +9,20 @@
                         <!-- END Side User -->
 
                         <!-- Side Navigation -->
-                        <?php $this->load->view('laman/comp/menulaborat');?>
+                        <?php
+                        if ($this->session->userdata('akses')=='Laborat'){
+                          $this->load->view('laman/comp/menulaborat');
+                        }
+                        elseif ($this->session->userdata('akses')=='Radio') {
+                          $this->load->view('laman/comp/menuradio');
+                        }
+                        elseif ($this->session->userdata('akses')=='Medical') {
+                          $this->load->view('laman/comp/menumedic');
+                        }
+                        // $this->load->view('laman/comp/menulaborat');?>
+
+
+
 
                         <!-- END Side Navigation -->
                     </div>
@@ -23,7 +36,7 @@
                 <!-- Page Content -->
                 <div class="content">
                     <div class="my-1 ">
-                        <h2 class="font-w700 text-black mb-10">Laboratorium</h2>
+                      <h2 class="font-w700 text-black mb-10"><?php echo $this->session->userdata('jabatan');?></h2>
                         <h3 class="h5 text-muted mb-0">
                            Selamat Datang, <?php echo $this->session->userdata('nama');?> | <?php echo $this->session->userdata('username');?> | <?php echo ucfirst($this->session->userdata('level'));?>
                         </h3>

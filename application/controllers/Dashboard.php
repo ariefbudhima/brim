@@ -14,11 +14,8 @@ class Dashboard extends APT_Controller {
 		if (!$this->session->userdata("masuk")){
             redirect("/");
         }
-        $data['obat'] = $this->Transaksi->get_obat();
-        $data['obats'] = $this->Transaksi->get_obat_general();
-        $data['trx'] = $this->Transaksi->get_trx();
-        $data['kt'] = $this->Transaksi->get_kategori_general();
-        $data['beli'] = $this->Beli->get_beli();
+        $data = NULL;
+
 		$this->laman('laman/v_dashboard',$data);
 	}
 	public function logout(){
@@ -26,5 +23,5 @@ class Dashboard extends APT_Controller {
 		redirect('/','refresh');
 	}
 
-	
+
 }
