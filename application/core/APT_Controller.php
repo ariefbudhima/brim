@@ -5,5 +5,6 @@
 			$this->load->view('template/index', $data, FALSE);
 		}
 
+
 	}
 ?>

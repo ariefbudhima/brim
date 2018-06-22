@@ -39,7 +39,7 @@
           <h4>URINALIS</h4>
         </div>
           <!-- action ke controller yang seharusnya untuk menginputkan data dan akan memanggil model yang bersangkutan -->
-        <form action="/action_page.php" method="get" class="col-lg-12">
+        <form action="<?php echo base_url();?>inputLaborat/addurinlab" method="post" class="col-lg-12">
           <div class="row">
             <div class="col-lg-4">
               <?php echo "Pilih Pasien" ?> <br>
@@ -56,7 +56,7 @@
 
 
             <?php echo "Warna Urin" ?> <br>
-            <select class="tabelku" name="">
+            <select class="tabelku" name="wurin">
               <option value="putih">Putih</option>
               <option value="bening">Bening</option>
               <option value="kuning">Kuning Pucat</option>
@@ -70,7 +70,7 @@
           <br> <br>
 
             <?php echo "Kejernihan" ?> <br>
-            <select class="tabelku" name="" >
+            <select class="tabelku" name="jernihan" >
               <option value="jernih">Jernih</option>
               <option value="keruh">Keruh</option>
             </select>
@@ -138,11 +138,11 @@
             </div>
             <?php echo "<strong>Sedimen</strong>" ?> <br>
             <?php echo "Eritrosit" ?> <br>
-            <input type="text" name="Eritrosit" class="tabelku"> <br>
+            <input type="text" name="sEritrosit" class="tabelku"> <br>
             <?php echo "Lekosit" ?> <br>
-            <input type="text" name="Lekosit" class="tabelku"> <br>
+            <input type="text" name="sLekosit" class="tabelku"> <br>
             <?php echo "Epitel" ?> <br>
-            <input type="text" name="Epitel" class="tabelku"> <br>
+            <input type="text" name="sEpitel" class="tabelku"> <br>
             <?php echo "Kristal" ?> <br>
             <div class="tabelku">
                 <input type="radio" name="kristal" value="positif"> Positif <br>

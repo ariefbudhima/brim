@@ -40,7 +40,7 @@
           </div>
         </div>
           <!-- action ke controller yang seharusnya untuk menginputkan data dan akan memanggil model yang bersangkutan -->
-        <form action="/action_page.php" method="get"class="col-lg-12" >
+        <form action="<?php echo base_url(); ?>inputLaborat/addhemalab" method="post"class="col-lg-12" >
           <div class="row">
             <div class="col-lg-4">
               <?php echo "Pilih Pasien" ?> <br>

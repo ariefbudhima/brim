@@ -40,6 +40,7 @@
                         <h3 class="h5 text-muted mb-0">
                            Selamat Datang, <?php echo $this->session->userdata('nama');?> | <?php echo $this->session->userdata('username');?> | <?php echo ucfirst($this->session->userdata('level'));?>
                         </h3>
+                        <!-- <?php echo $idPasien ?> -->
 
                     </div>
 

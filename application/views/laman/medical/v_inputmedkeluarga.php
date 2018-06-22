@@ -49,7 +49,7 @@
                           document.getElementById(id).value = document.getElementById(ket).value;
                         // if (document.getElementById('ekspansi').checked) {
                           // document.getElementById('ekspansi').value = document.getElementById('ket2').value;
-                          // alert(document.getElementById(ket).value);
+                          // alert(ada);
                         // }
 
                       }
@@ -58,16 +58,23 @@
                         document.getElementById(id).checked = true;
                       }
                     </script>
+
                     <div class="block block-fx-shadow px-4 py-4">
+                      <div class="body col-sm-12">
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="col-sm-6">
+                          <h4>Riwayat Penyakit Keluarga</h4>
+                          </div>
+                        </div>
+                        <form class="" action="<?php echo base_url(); ?>inputMedic/addkeluargamed" method="post">
                           <div class="row">
-                            <form class="col-lg-8" action="<?php echo base_url();?>inputRadio/addthoraxrad" method="post">
-                            <h4>Thorax</h4>
-                            <div class="row">
                             <div class="col-lg-4">
                               <?php echo "Pilih Pasien" ?> <br>
                               <div class="tabelku">
                                 <?php
                                   echo "<select name = 'pasien'>";
+                                  // echo "<option value = 'Pilih Pasien'>";
                                   foreach ($pasien as $key) {
                                     echo "<option value = '".$key->idPasien."'>".$key->idPasien."</option>>";
                                   }
@@ -75,85 +82,80 @@
                                  ?>
                               </div>
                               <br>
-                              <?php echo "Bentuk" ?><br>
+                              <?php echo "Penyakit Jantung" ?><br>
                               <div class="tabelku">
-                                <input type="radio" name="Bentuk" value="Normal"> Normal <br>
-                                <input type="radio" name="Bentuk" id="bentuk" value=""> Tidak Normal <input type="text" id="ket1" name="keterangan1" value="" onclick="radioclick('bentuk');" onchange="funct('bentuk', 'ket1');">
+                                <input type="radio" name="jantung" value="Ya"> Ya <br>
+                                <input type="radio" name="jantung" value="Tidak"> Tidak <br>
+                                <!-- <input type="text" name="keterangan" value=""> -->
                               </div>
                               <br>
-                              <?php echo "Ekspansi" ?><br>
+                              <?php echo "Penyakit Darah Tinggi" ?><br>
                               <div class="tabelku">
-                                <input type="radio" name="Ekspansi" value="Normal"> Normal <br>
-                                <input type="radio" name="Ekspansi" id="ekspansi" value=""> Tidak Normal <input type="text" id="ket2" name="keterangan2" value="" onclick="radioclick('ekspansi');" onchange="funct('ekspansi', 'ket2');">
+                                <input type="radio" name="dtinggi" value="Ya"> Ya <br>
+                                <input type="radio" name="dtinggi" value="Tidak"> Tidak <br>
                               </div>
                               <br>
-                              <?php echo "Palpasi" ?><br>
+                              <?php echo "Penyakit Kencing Manis" ?><br>
                               <div class="tabelku">
-                                <input type="radio" name="Palpasi" value="Normal"> Normal <br>
-                                <input type="radio" name="Palpasi" id="palpasi" value=""> Tidak Normal <input type="text" id="ket3" name="keterangan3" value="" onclick="radioclick('palpasi');" onchange="funct('palpasi', 'ket3');">
+                                <input type="radio" name="kmanis" value="Ya"> Ya <br>
+                                <input type="radio" name="kmanis" value="Tidak"> Tidak
                               </div>
                               <br>
                             </div>
 
                             <div class="col-lg-4">
-                              <?php echo "Perkusi" ?><br>
+                              <?php echo "Penyakit Stroke" ?><br>
                               <div class="tabelku">
-                                <input type="radio" name="Perkusi" value="Normal"> Normal <br>
-                                <input type="radio" name="Perkusi" id="perkusi" value=""> Tidak Normal <input type="text" id="ket4" name="keterangan4" value="" onclick="radioclick('perkusi');" onchange="funct('perkusi', 'ket4');">
+                                <input type="radio" name="Stroke" value="Ya"> Ya <br>
+                                <input type="radio" name="Stroke" value="Tidak"> Tidak
                               </div>
                               <br>
-                              <?php echo "Auskultasi" ?><br>
+                              <?php echo "Penyakit Paru/Asma/TBC" ?><br>
                               <div class="tabelku">
-                                <input type="radio" name="Auskultasi" value="Normal"> Normal <br>
-                                <input type="radio" name="Auskultasi" id="auskultasi" value=""> Tidak Normal <input type="text" id="ket5" name="keterangan5" value="" onclick="radioclick('auskultasi');" onchange="funct('auskultasi', 'ket5');">
+                                <input type="radio" name="Paru" value="Ya"> Ya <br>
+                                <input type="radio" name="Paru" value="Tidak"> Tidak
                               </div>
                               <br>
-                              <?php echo "Lainnya" ?><br>
+                              <?php echo "Penyakit Kanker" ?><br>
                               <div class="tabelku">
-                                <input type="radio" name="Lainnya" id="lainnyanormal" value="" checked> Normal <input type="text" id="ket6" name="keterangan6" value="" onclick="radioclick('lainnyanormal')" onchange="funct('lainnyanormal', 'ket6');"><br>
-                                <input type="radio" name="Lainnya" id="lainnyatidak" value=""> Tidak Normal <input type="text" id="ket7" name="keterangan7" value="" onclick="radioclick('lainnyatidak');" onchange="funct('lainnyatidak', 'ket7');">
+                                <input type="radio" name="Kanker" value="Ya"> Ya <br>
+                                <input type="radio" name="Kanker" value="Tidak"> Tidak
+                              </div>
+                              <br>
+                              <?php echo "Penyakit Gangguan Jiwa" ?><br>
+                              <div class="tabelku">
+                                <input type="radio" name="gjiwa" value="Ya"> Ya <br>
+                                <input type="radio" name="gjiwa" value="Tidak"> Tidak
                               </div>
                               <br>
                             </div>
+
+                            <div class="col-lg-4">
+                              <?php echo "Penyakit Ginjal" ?><br>
+                              <div class="tabelku">
+                                <input type="radio" name="Ginjal" value="Ya"> Ya <br>
+                                <input type="radio" name="Ginjal" value="Tidak"> Tidak
+                              </div>
+                              <br>
+                              <?php echo "Penyakit Saluran Cerna" ?><br>
+                              <div class="tabelku">
+                                <input type="radio" name="scerna" value="Ya"> Ya <br>
+                                <input type="radio" name="scerna" value="Tidak"> Tidak
+                              </div>
+                              <br>
+                              <?php echo "Penyakit Lainnya" ?><br>
+                              <div class="tabelku">
+                                <input type="radio" name="Lainnya" id="Lainnya" value="Ya"> Ya <input type="text" name="keterangan" id="ket" value="" onclick="radioclick('Lainnya');" onchange="funct('Lainnya','ket');"><br>
+                                <input type="radio" name="Lainnya" value="Tidak"> Tidak
+                              </div>
                             </div>
-                            <div class="col-lg-6">
-                            <br>
+
+                          </div>
+                          <div class="col-lg-6">
                             <input type="submit" value="Submit" style="text-align : center; position : absolute;"> <br>
-                            </div>
-                          </form>
+                          </div>
+                        </form>
 
-                          <form class="col-lg-4" action="<?php echo base_url();?>inputRadio/addleherrad" method="post">
-                            <h4>Leher</h4>
-                            <div class="row">
-                              <div class="col-lg-4">
-                                <?php echo "Pilih Pasien" ?> <br>
-                                <div class="tabelku">
-                                  <?php
-                                    echo "<select name = 'pasien'>";
-                                    foreach ($pasien as $key) {
-                                      echo "<option value = '".$key->idPasien."'>".$key->idPasien."</option>>";
-                                    }
-                                    echo "</select>";
-                                   ?>
-                                </div>
-                                <br>
-                                <div>
-                                  <?php echo "Leher" ?> <br>
-                                  <div class="tabelku">
-                                    <input type="radio" name="LNormal" value="Normal"> Normal <br>
-                                    <input type="radio" name="LNormal" value="Tidak Normal"> Tidak Normal
-                                  </div>
-                                </div>
-                              </div>
-                              </div>
-                              <br><br>
-                              <input type="submit" value="Submit" style="text-align : center; position : absolute;"> <br>
-                              </form>
-
-                        </div>
-
-                </div>
-              </div>
                 <!-- END Page Content -->
 <!--             </main>-->
             <!-- END Main Container -->

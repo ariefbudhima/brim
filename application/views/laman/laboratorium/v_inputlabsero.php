@@ -31,14 +31,41 @@
 
                     <div class="block block-fx-shadow px-4 py-4">
                       <!-- <div class="container-fluid"> -->
+                      <form class="" action="<?php echo base_url(); ?>inputLaborat/addserolab" method="post">
                       <div class="row">
                         <div class="col-lg-4">
-                          halo
+                          <?php echo "Pilih Pasien" ?> <br>
+                          <div class="tabelku">
+                            <?php
+                              echo "<select name = 'pasien'>";
+                              foreach ($pasien as $key) {
+                                echo "<option value = '".$key->idPasien."'>".$key->idPasien."</option>>";
+                              }
+                              echo "</select>";
+                             ?>
+                          </div>
+                          <br>
+                          <?php echo "VDRL/syphilis" ?><br>
+                          <div class="tabelku">
+                            <input type="radio" name="Syphilis" value="Normal"> Normal <br>
+                            <input type="radio" name="Syphilis" value="Tidak Normal"> Tidak Normal
+                          </div>
+                          <br>
+                          <?php echo "HbsAg" ?><br>
+                          <div class="tabelku">
+                            <input type="radio" name="HbsAg" value="Normal"> Normal <br>
+                            <input type="radio" name="HbsAg" value="Tidak Normal"> Tidak Normal
+                          </div>
+                          <br>
+                          <?php echo "Widal" ?><br>
+                          <div class="tabelku">
+                            <input type="radio" name="Widal" value="Normal"> Normal <br>
+                            <input type="radio" name="Widal" value="Tidak Normal"> Tidak Normal
+                          <br>
                         </div>
-                        <div class="col-lg-4">
-                          halo2
-                        </div>
-                      </div>
+                        <br>
+                        <input type="submit" value="Submit" style="text-align : center; position : absolute;"> <br>
+                    </form>
     <!-- </div> -->
   </div>
 </div>

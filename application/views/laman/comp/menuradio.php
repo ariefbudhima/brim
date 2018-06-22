@@ -9,22 +9,22 @@
         </li> -->
 <!-- bagian tambah laborat harus bisa diedit, jadi kalo ada data pasien yang sama, fungsi yang dipanggil update, bukan add -->
         <li>
-            <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-plus-square"></i><span class="sidebar-mini-hide">Tambah Data Laborat</span></a>
+            <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-plus-square"></i><span class="sidebar-mini-hide">Tambah Data Radio</span></a>
             <ul>
                 <li>
-                    <a href="<?php echo base_url();?>InputRadio/inputradthorax">Thorax</a>
+                    <a href="<?php echo base_url();?>InputRadio/inputradthorax">Thorax & Leher</a>
                 </li>
                 <li>
                     <a href="<?php echo base_url(); ?>InputRadio/inputradtht">THT</a>
                 </li>
-                <li>
-                    <a href="<?php echo base_url(); ?>op_error_400">Leher</a>
-                </li>
+                <!-- <li>
+                    <a href="<?php echo base_url(); ?>inputRadio/inputradleher">Leher</a>
+                </li> -->
                 <li>
                     <a href="<?php echo base_url(); ?>InputRadio/inputradabdomen">Abdomen</a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url(); ?>op_error_400">Neurologis</a>
+                    <a href="<?php echo base_url(); ?>InputRadio/inputradneuro">Neurologis</a>
                 </li>
 
 

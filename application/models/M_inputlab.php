@@ -6,6 +6,18 @@
       $query = $this->db->get();
       return $query;
     }
+
+    public function addhema($data){
+      $this->db->insert('labhema', $data);
+    }
+
+    public function addurin($data){
+      $this->db->insert('laburin', $data);
+    }
+
+    public function addsero($data){
+      $this->db->insert('labsero', $data);
+    }
   }
 
  ?>
